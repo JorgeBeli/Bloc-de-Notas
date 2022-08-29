@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  color: #E4DCCF;
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  background-color: #202020;
+}
+
+.nav__wraper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #576F72;
+  height: 15vh;
+}
+.nav__wraper .nav__logo {
+  font-size: 2rem;
+  margin: 1rem 2rem;
+}
+.nav__wraper .nav__logo h1 a {
+  color: #E4DCCF;
+}
+.nav__wraper .nav__sections {
+  margin-right: 2rem;
+}
+.nav__wraper .nav__sections ul li {
+  display: flex;
+  gap: 2rem;
+}
+.nav__wraper .nav__sections ul li a {
+  color: #E4DCCF;
+}
+
+.login__wraper {
+  display: none;
+}
+
+.options__wraper {
+  margin-top: 1rem;
+}
+.options__wraper .notes__wraper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.options__wraper .notes__wraper .note__wraper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+  width: 20vw;
+  height: fit-content;
+  border-radius: 45px;
+  padding: 2rem;
+  background-color: #898AA6;
+}
+.options__wraper .notes__wraper .note__wraper .note__title :nth-child(2) {
+  margin-top: 0.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+.options__wraper .notes__wraper .note__wraper .note__text {
+  height: 100%;
+}
+.options__wraper .notes__wraper .note__wraper .note__text :nth-child(2) {
+  margin-top: 0.5rem;
+  height: 100%;
+  max-width: 100%;
+  max-height: 14ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+}
+.options__wraper .notes__wraper .note__wraper button {
+  margin: 0 auto;
+  width: fit-content;
+  color: #D6EFED;
+  background-color: #576F72;
+  border: 1px solid #576F72;
+  padding: 0.35rem;
+  border-radius: 22px;
+  cursor: pointer;
+}
+.options__wraper .addNote__wraper {
+  margin: 1rem auto;
+  width: 5vw;
+  height: 10vh;
+  position: relative;
+  border-radius: 50%;
+  background-color: #576F72;
+  cursor: pointer;
+}
+.options__wraper .addNote__wraper::before, .options__wraper .addNote__wraper::after {
+  content: "";
+  position: absolute;
+  background-color: #898AA6;
+}
+.options__wraper .addNote__wraper::before {
+  top: 25%;
+  width: 10%;
+  height: 50%;
+  left: 50%;
+  margin-left: -5%;
+}
+.options__wraper .addNote__wraper::after {
+  top: 25%;
+  width: 10%;
+  height: 50%;
+  transform: rotate(90deg);
+  left: 50%;
+  margin-left: -5%;
+}
+
+.create__notes__wraper {
+  display: none;
+}
+.create__notes__wraper .note__nav__wraper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.create__notes__wraper .note__nav__wraper .note__nav__title {
+  width: 100%;
+}
+.create__notes__wraper .note__nav__wraper .note__nav__title p {
+  font-size: 2rem;
+  text-align: center;
+  width: fit-content;
+  margin-left: 7.35rem;
+}
+.create__notes__wraper .note__nav__wraper .note__close {
+  width: 1.5vw;
+  height: 3.5vh;
+  background-color: #7D9D9C;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  transform: rotate(45deg);
+}
+.create__notes__wraper .note__nav__wraper .note__close::before, .create__notes__wraper .note__nav__wraper .note__close::after {
+  content: "";
+  position: absolute;
+  background-color: #576F72;
+}
+.create__notes__wraper .note__nav__wraper .note__close::before {
+  top: 25%;
+  width: 10%;
+  height: 50%;
+  left: 50%;
+  margin-left: -5%;
+}
+.create__notes__wraper .note__nav__wraper .note__close::after {
+  top: 25%;
+  width: 10%;
+  height: 50%;
+  transform: rotate(90deg);
+  left: 50%;
+  margin-left: -5%;
+}
+.create__notes__wraper .note__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  background-color: #576F72;
+  margin: auto;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 45px;
+}
+.create__notes__wraper .note__form .note__inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.create__notes__wraper .note__form .note__inputs input, .create__notes__wraper .note__form .note__inputs textarea {
+  text-align: center;
+  color: #202020;
+  border-radius: 22px;
+  border: none;
+  resize: none;
+}
+.create__notes__wraper .note__form .note__inputs :nth-child(2) {
+  width: 100%;
+  height: 5vh;
+}
+.create__notes__wraper .note__form .note__inputs :nth-child(4) {
+  padding: 1rem;
+}
+.create__notes__wraper .note__form .note__inputs :nth-child(5) input {
+  padding: 0.5rem;
+}
+
+.visible {
+  display: flex;
+}
+
+/*# sourceMappingURL=style.css.map */

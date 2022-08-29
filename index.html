@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/752/752326.png">
+    <title>Bloc de Notas</title>
+</head>
+<body>
+    <header>
+        <nav class="nav__wraper">
+            <div class="nav__logo">
+                <h1><a href="./index.html">Bloc</a></h1>
+            </div>
+            <div class="nav__sections">
+                <ul>
+                    <li>
+                        <a href="#">Notes</a>
+                        <a href="#">User</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <aside class="login__wraper">
+            <form class="login__form">
+                <label for="user"></label>
+                <input type="text" id="user" placeholder="Username">
+
+                <label for="password"></label>
+                <input type="password" id="password" placeholder="Password">
+
+                <label for="submit">
+                    <input type="submit" id="submit" value="Send">
+                </label>
+            </form>
+        </aside>
+    </header>
+    <main>
+        <section class="options__wraper">
+            <div class="notes__wraper">
+
+            </div>
+            <div class="addNote__wraper">
+
+            </div>
+        </section>
+        <section class="create__notes__wraper">
+            <form class="note__form">
+                <div class="note__nav__wraper">
+                    <div class="note__nav__title">
+                        <p>Note</p>
+                    </div>
+                    <div class="note__close">
+                        
+                    </div>
+                </div>
+                <div class="note__inputs">
+                    <label for="note__title"></label>
+                    <input type="text" id="note__title" placeholder="Title" required>
+    
+                    <label for="note__text"></label>
+                    <textarea id="note__text" cols="30" rows="10" placeholder="Note" required></textarea>
+    
+                    <label for="submit__note">
+                        <input type="submit" id="submit__note" value="Agregar">
+                    </label>
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
